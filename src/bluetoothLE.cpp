@@ -1,3 +1,14 @@
+/**
+ * @file bluetoothLE.cpp
+ * @author Henrik Kaltenbach and Jakob Stoye (henrik.kaltenbach49@gmail.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-23
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 /*
     https://www.hackster.io/botletics/esp32-ble-android-arduino-ide-awesome-81c67d
 
