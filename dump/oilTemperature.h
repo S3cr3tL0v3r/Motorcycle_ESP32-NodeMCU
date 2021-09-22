@@ -1,5 +1,5 @@
 /**
- * @file oilTemperature.cpp
+ * @file oilTemperature.h
  * @author Henrik Kaltenbach and Jakob Stoye (henrik.kaltenbach49@gmail.com)
  * @brief 
  * @version 0.1
@@ -9,12 +9,12 @@
  * 
  */
 
-#include "oilTemperature.h"
+#include <Arduino.h>
 
 /**
  * @brief 
  * 
  */
-void meassureOilTemperature() {
+inline void meassureOilTemperature() {
   
 }

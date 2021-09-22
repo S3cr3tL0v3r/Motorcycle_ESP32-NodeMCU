@@ -1,5 +1,5 @@
 /**
- * @file braking.cpp
+ * @file braking.h
  * @author Henrik Kaltenbach and Jakob Stoye (henrik.kaltenbach49@gmail.com)
  * @brief 
  * @version 0.1
@@ -9,13 +9,16 @@
  * 
  */
 
-#include "braking.h"
+#include <Arduino.h>
 
-/**
- * @brief 
- * 
- */
-void detectHeavyBraking() {
+const int xPin = A0;
+const int yPin = A1;
+const int zPin = A2;
+
+void printValues(int x, int y, int z);
+void printValues(float x, float y, float z);
+
+inline void detectHeavyBraking() {
   int x = analogRead(xPin);
   int y = analogRead(yPin);
   int z = analogRead(zPin);
@@ -24,5 +27,12 @@ void detectHeavyBraking() {
   float yAccel = ((float)y - 329.5) / 68.5 * 9.81;
   float zAccel = ((float)z - 340) / 68 * 9.81;
   printValues(xAccel, yAccel, zAccel);
+
+  if (zAccel < -9.0) {
+    blinkLED2s(2, 300);
+  } else {
+    delay(100);
+  }
+
   delay(100);
 }
