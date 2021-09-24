@@ -1,12 +1,16 @@
-/**
- * @file BLE.h
- * @author Henrik Kaltenbach (henrik.kaltenbach49@gmail.com)
- * @brief 
- * @version 0.1
- * @date 2021-06-01
- * 
- * @copyright Copyright (c) 2021
- * 
- */
+// #ifndef BLE_H
+// #define BLE_H
 
-#pragma once
+// #include <stdint.h>
+
+// #define TEMPERATURE_CHARACTERISTIC    0
+// #define HEAVY_BRAKING_CHARACTERISTIC  1
+
+// extern bool deviceConnected;
+// extern bool oldDeviceConnected;
+
+// extern void setupBLE();
+// extern void startAdvertising();
+// extern void notifyCharacteristic(uint8_t characteristic, uint8_t* data, uint8_t length);
+
+// #endif /* BLE_H */
